@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   NavigateToNextScreen(){
     Future.delayed(Duration(seconds: 5),(){
       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>AuthScreen()), (e)=>false);
-    })
+    });
   }
   @override
   Widget build(BuildContext context) {
